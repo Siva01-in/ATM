@@ -114,3 +114,61 @@
   - Transactions are simulated with delays for realism.
   - The script does not persist data between runs.
   - There are some spelling mistakes in the prompts (e.g., "Desopit" instead of "Deposit", "Withdirwal" instead of "Withdrawal"). You can correct these for a more polished experience.
+
+
+ # V 1.1
+  # ATM Simulation – Deposit Feature Update
+
+This project is a Python script simulating a simple ATM machine. It allows users to check balance, deposit, and withdraw money after PIN authentication.
+This version highlights an improved deposit feature with enhanced transaction feedback and processing simulation.
+
+***What's New in Deposit Feature?***<br>
+ 
+  - Added an extra transaction processing message and delay after entering the deposit amount, making the experience more realistic.
+
+ - Improved user feedback during the deposit process.
+
+***New Deposit Code***
+
+  ```
+  elif opt==2:
+            print("Transcation Processing.........")
+            amt=int(input("Enter a amout to Deposit $ :"))
+            bal +=amt
+            print("Transcation Processing.........")  # New line added
+            time.sleep(3)
+            print("Your Desopit amount $",amt)
+            time.sleep(1)
+            print("Your current balance is $",bal)
+            time.sleep(1)
+            print("Deposit Successfully ")
+            continue
+  ```
+
+***How to Use***
+
+  1. Copy the updated code into your Python file (e.g., atm_simulator.py).
+  2. Run the script:
+  ```
+  python atm_simulator.py
+  ```
+  3. Enter your PIN and select the deposit option to experience the improved feedback.
+
+***Example Deposit Interaction***
+
+ ```
+Transcation Processing.........
+Enter a amout to Deposit $ : 200
+Transcation Processing.........
+Your Desopit amount $ 200
+Your current balance is $ 1200
+Deposit Successfully 
+
+ ```
+
+***Notes**
+  - The extra processing message and delay simulate real ATM behavior, improving user experience.
+  
+  - The script still includes options for balance check and withdrawal.
+  
+  - You can further customize prompts and delays as needed.
