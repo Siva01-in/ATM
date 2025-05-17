@@ -108,3 +108,9 @@
   Thanks for visiting a ATM
 
  ```
+***Notes*** <br>
+
+  - The default PIN is 1234 and the initial balance is $1000.
+  - Transactions are simulated with delays for realism.
+  - The script does not persist data between runs.
+  - There are some spelling mistakes in the prompts (e.g., "Desopit" instead of "Deposit", "Withdirwal" instead of "Withdrawal"). You can correct these for a more polished experience.
