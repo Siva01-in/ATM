@@ -26,7 +26,8 @@ if pin==p:
             print("Transcation Processing.........")
             amt=int(input("Enter a amout to Deposit $ :"))
             bal +=amt
-            time.sleep(1)
+            print("Transcation Processing.........")
+            time.sleep(3)
             print("Your Desopit amount $",amt)
             time.sleep(1)
             print("Your current balance is $",bal)
